@@ -1,11 +1,14 @@
 import mmh3
 import hashlib
+import codecs
 
 def compute_mmh3_hash(file_name):
     try:
         with open(file_name, 'rb') as file:
             data = file.read()
-            hash_value = mmh3.hash(data)
+            # Encode the data to base64
+            encoded_data = codecs.encode(data,"base64")
+            hash_value = mmh3.hash(encoded_data)
             return hash_value
     except FileNotFoundError:
         return "File not found. Please check the file path."
