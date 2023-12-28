@@ -15,3 +15,4 @@ Please enter the name of the favicon file (including the extension): kfc.ico
 [+] The search.censys.io search syntax is: 0d22ff6f71d60e14f62c34ad33dcdec1  
 
 
+You can read a writeup on the tool here: https://www.digitalforensicstips.com/2023/12/introducing-faviconlocator-eazy-button.html
